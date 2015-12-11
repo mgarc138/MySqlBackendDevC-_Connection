@@ -1,0 +1,6 @@
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\bin\Debug\Schema.exe.config
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\bin\Debug\Schema.exe
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\bin\Debug\Schema.pdb
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.csprojResolveAssemblyReference.cache
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.exe
+c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.pdb
