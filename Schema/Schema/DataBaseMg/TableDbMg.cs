@@ -31,6 +31,30 @@ namespace Schema.DataBaseMg
 
             return tableNames;
         }
+
+        public List<string> GetAttributeListFromTable(string tableName)
+        {
+            MySqlCommand command = connection.CreateCommand();
+            /* Only get one row to reduce query time */
+            command.CommandText = string.Format("SELECT * FROM {0} LIMIT 1", tableName);
+            connection.Open();
+
+            MySqlDataReader reader = command.ExecuteReader();
+            DataTable dt = reader.GetSchemaTable();
+            List<string> attributeList = new List<string>();
+            foreach (DataRow row in dt.Rows)
+            {
+                String columnName = row[dt.Columns["ColumnName"]].ToString();
+
+                attributeList.Add(columnName);
+            }
+
+            reader.Close();
+            connection.Close();
+
+            return attributeList;
+
+        }
         
     }
 }
