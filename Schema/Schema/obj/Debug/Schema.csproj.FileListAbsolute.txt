@@ -4,3 +4,6 @@ c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\bin\Debug\Sc
 c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.csprojResolveAssemblyReference.cache
 c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.exe
 c:\users\marlon\documents\visual studio 2013\Projects\Schema\Schema\obj\Debug\Schema.pdb
+C:\Users\marlon\Desktop\MySqlBackendDevC-_Connection\Schema\Schema\bin\Debug\Schema.exe.config
+C:\Users\marlon\Desktop\MySqlBackendDevC-_Connection\Schema\Schema\obj\Debug\Schema.exe
+C:\Users\marlon\Desktop\MySqlBackendDevC-_Connection\Schema\Schema\obj\Debug\Schema.pdb

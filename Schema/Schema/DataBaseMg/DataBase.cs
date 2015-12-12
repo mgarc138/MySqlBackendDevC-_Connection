@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace Schema
+namespace Schema.DataBaseMg
 {
     class DataBase
     {
-        private MySqlConnection connection;
+        protected MySqlConnection connection;
         private string server;
         private string database;
         private string uid;
