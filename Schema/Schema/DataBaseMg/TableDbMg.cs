@@ -55,6 +55,33 @@ namespace Schema.DataBaseMg
             return attributeList;
 
         }
+
+        public List<string>[] GetContentOfTable(string tableName, List<string> attributes)
+        {
+            string request = "select * from " + "`" + tableName + "`";
+            int size = attributes.Count;
+            List<string>[] list = new List<string>[size];
+
+            connection.Open();
+            // create Command
+            MySqlCommand cmd = new MySqlCommand(request, connection);
+            // Create a data reader and Execute the command
+            MySqlDataReader dataReader = cmd.ExecuteReader();
+
+            while (dataReader.Read())
+            {
+                for (int j = 0; j < attributes.Count; j++)
+                {
+                    list[j].Add(dataReader[attributes[j]] + "");
+                }
+            }
+
+            dataReader.Close();
+            connection.Close();
+
+            return list;
+        }
+
         
     }
 }
